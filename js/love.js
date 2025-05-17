@@ -121,25 +121,32 @@ function Rise() {
 
 function mostrarMensagemFinal() {
     const mensagem = document.createElement("h1");
-    mensagem.innerText = "TE AMO";
-    mensagem.innerText = "Razón de Mi Sonrisa 💞";
+    mensagem.innerHTML = "Miguel Calzadilla Bastardo,<br> razón de mi sonrisa 💞";
     mensagem.setAttribute("aria-label", "Te Amo");
     mensagem.style.position = "fixed";
-    mensagem.style.top = "70%";
+    mensagem.style.top = "55%";
     mensagem.style.width = "100%";
     mensagem.style.textAlign = "center";
     mensagem.style.fontSize = "48px";
-    mensagem.style.color = "#F8F4EE";
+    mensagem.style.color = "#3A4A68";
     mensagem.style.zIndex = 1000;
 
-    const botao = document.createElement("button");
-    botao.onclick = () => window.location.reload();
-
     document.body.appendChild(mensagem);
-    document.body.appendChild(botao);
 }
 
 window.onload = function () {
+
+    const audio = document.getElementById("audioFundo");
+
+  function iniciarSom() {
+    audio.play();
+        // Remove o evento depois de tocar
+        document.removeEventListener("click", iniciarSom);
+    }
+
+    // Quando a pessoa tocar/clicar em qualquer lugar, inicia a música
+    document.addEventListener("click", iniciarSom);
+
 
     setTimeout(() => {
 

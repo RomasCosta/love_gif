@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Delius+Swash+Caps&family=Exile&family=Pacifico&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
@@ -10,7 +13,7 @@ html, body {
     height: 100%;
     overflow: hidden;
     background-color: #F6CD44;
-    font-family: "Exile", system-ui;
+    font-family: "Anton", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
@@ -167,3 +170,27 @@ html, body {
         padding: 6px 12px !important;
     }
 }
+
+#toqueMensagem {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: sans-serif;
+  z-index: 999;
+  animation: fadeOut 2s ease 6s forwards;
+}
+
+/* Desaparecer suavemente após um tempo */
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
