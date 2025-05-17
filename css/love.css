@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Delius+Swash+Caps&family=Exile&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&family=Anton&family=Delius+Swash+Caps&family=Exile&family=Pacifico&display=swap');
 
 
 * {
@@ -13,7 +13,7 @@ html, body {
     height: 100%;
     overflow: hidden;
     background-color: #F6CD44;
-    font-family: "Anton", sans-serif;
+    font-family: "Pacifico", cursive;
     font-weight: 400;
     font-style: normal;
 }
